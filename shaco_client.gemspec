@@ -6,12 +6,12 @@ require "shaco_client/version"
 Gem::Specification.new do |spec|
   spec.name          = "shaco_client"
   spec.version       = ShacoClient::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
+  spec.authors       = ["TruRooms Inc."]
+  spec.email         = ["developers@trurooms.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{A Simple API wrapper for the Shaco API}
+  spec.description   = %q{Use this to easily interact with the Shaco API and perform common actions}
+  spec.homepage      = "https://github.com/TruRooms/shaco_client"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -35,4 +35,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+
+  spec.add_runtime_dependency "logger"
+  spec.add_runtime_dependency "httparty"
 end
