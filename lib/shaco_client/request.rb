@@ -1,6 +1,6 @@
 module ShacoClient
   class Request
-    include 'HTTParty'
+    include HTTParty
 
     # @!attribute [r] api_key
     # @return [String] api_key
@@ -17,6 +17,20 @@ module ShacoClient
       @api_key = api_key
       @base_url = base_url
     end
+
+    def api_url path, params={}
+      url = File.join File.join(@base_url, api_base_path), path
+      "#{url}?#{api_query_string params}"
+    end
+
+    def api_query_string params = {}
+      URI.encode_www_form params.merge api_key: api_key
+    end
+
+    def api_base_path
+      "/api/v1"
+    end
+
 
     # Calls the API via HTTParty and handles errors
     # @param url [String] the url to call

@@ -15,7 +15,7 @@ module ShacoClient
     # @option options [String] :base_url ("https://shaco.trurooms.com") Base URL for API requests
     def initialize api_key, options = {}
       @api_key = api_key
-      @development = options.delete(:base_url) || "https://shaco.trurooms.com"
+      @base_url = options.delete(:base_url) || "https://shaco.trurooms.com"
     end
 
     def work
