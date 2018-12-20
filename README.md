@@ -1,8 +1,10 @@
-# ShacoClient [![Build Status](https://travis-ci.org/TruRooms/shaco_client.svg?branch=master)](https://travis-ci.org/TruRooms/shaco_client)
+# ShacoClient
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/shaco_client`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Build Status](https://travis-ci.org/TruRooms/shaco_client.svg?branch=master)](https://travis-ci.org/TruRooms/shaco_client)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ab9407e605abc307b88f/maintainability)](https://codeclimate.com/github/TruRooms/shaco_client/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/ab9407e605abc307b88f/test_coverage)](https://codeclimate.com/github/TruRooms/shaco_client/test_coverage)
 
-TODO: Delete this and the text above, and describe your gem
+An easy to use API wrapper for the Shaco application
 
 ## Installation
 
@@ -22,7 +24,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Creating a client
+
+    client = ShacoClient::Client.new('API_KEY_GOES_HERE')
+
+    # Lists all available work.
+    client.work.list
 
 ## Development
 
