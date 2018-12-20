@@ -1,5 +1,7 @@
 module ShacoClient
   class Request
+    class NotFound < StandardError; end
+
     include HTTParty
 
     # @!attribute [r] api_key

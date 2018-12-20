@@ -1,5 +1,6 @@
 require "bundler/setup"
 require "shaco_client"
+require 'webmock/rspec'
 
 SPEC_ROOT = __dir__
 
@@ -15,4 +16,10 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  config.before(:each) do
+    stub_request(:any, /shaco/).to_rack(FakeShaco)
+  end
 end
+
+WebMock.disable_net_connect!(allow_localhost: true)

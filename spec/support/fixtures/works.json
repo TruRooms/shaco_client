@@ -1,0 +1,41 @@
+[
+  {
+    "id":2674,
+    "domain":"leatherfurnitureexpo.com",
+    "page_url":"https://www.leatherfurnitureexpo.com/natuzzi-editions-b592.html?search=Natuzzi&description=true",
+    "offer_id":485,
+    "target_xpath":"quantity[16230]",
+    "target_keyword":null,
+    "product_name":"Lino Loveseat",
+    "product_sku":"B592-005"
+  },
+  {
+    "id":2673,
+    "domain":"leatherfurnitureexpo.com",
+    "page_url":"https://www.leatherfurnitureexpo.com/natuzzi-editions-a297-leather-sofa-set.html?search=Natuzzi&description=true",
+    "offer_id":56,
+    "target_xpath":"quantity[22096]",
+    "target_keyword":null,
+    "product_name":"Battista Armchair With Motion",
+    "product_sku":"A297-004"
+  },
+  {"id":2672,
+    "domain":"leatherfurnitureexpo.com",
+    "page_url":"https://www.leatherfurnitureexpo.com/natuzzi-editions-b760-simbiosi-leather-sectional.html?search=Natuzzi&description=true",
+    "offer_id":77,
+    "target_xpath":"quantity[17829]",
+    "target_keyword":null,
+    "product_name":"Simbiosi Armless Chair And A Half",
+    "product_sku":"B760-291"
+  },
+  {
+    "id":2671,
+    "domain":"leatherfurnitureexpo.com",
+    "page_url":"https://www.leatherfurnitureexpo.com/natuzzi-editions-a450-prudenza-leather-sectional.html?search=Natuzzi&description=true",
+    "offer_id":83,
+    "target_xpath":"quantity[16799]",
+    "target_keyword":null,
+    "product_name":"Prudenza 2Seater 1 Left Arm W/Elec.Mot.",
+    "product_sku":"A450-182"
+  }
+]

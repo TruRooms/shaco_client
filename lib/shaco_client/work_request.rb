@@ -5,5 +5,13 @@ module ShacoClient
       result = perform api_url("works")
     end
 
+    def find id
+      result = perform api_url("works/#{id}")
+    end
+
+    def claim id
+      result = perform api_url("works/#{id}"), :patch, {id: id}
+    end
+
   end
 end
