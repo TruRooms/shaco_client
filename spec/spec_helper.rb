@@ -1,6 +1,8 @@
 require "bundler/setup"
 require "shaco_client"
 require 'webmock/rspec'
+require 'simplecov'
+SimpleCov.start
 
 SPEC_ROOT = __dir__
 
